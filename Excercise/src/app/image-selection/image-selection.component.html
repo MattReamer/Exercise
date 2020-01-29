@@ -1,7 +1,6 @@
 <!-- form container -->
-<div class="container">
-
-    <div class="jumbotron">
+<main class="container">
+    <section class="jumbotron">
         <h1 class="text-muted">Image Selection:</h1>
         <form class="form-horizontal" role="form" [formGroup]="myForm">
             <h4 class="col-form-label">Thumbnail: <img class="image-thumbnail" src="{{image ? image.urls.thumb : ''}}">
@@ -29,12 +28,11 @@
             data-target="#myModal">Search
             Images</button>
         <button (click)="clear()" type="button" class="btn btn-danger btn-lg">Clear Selection</button>
-    </div>
+    </section>
 
     <!-- Modal -->
-    <div id="myModal" class="modal fade" role="dialog">
+    <section id="myModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
-
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
@@ -55,5 +53,5 @@
             </div>
 
         </div>
-    </div>
-</div>
+    </section>
+</main>
