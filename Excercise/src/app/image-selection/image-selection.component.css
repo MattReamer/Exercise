@@ -46,6 +46,7 @@ h4{
 }
 img.image-thumbnail{
     margin-left: 1rem;
+    max-height: 30vh;
 }
 .container{
     display: flex;
