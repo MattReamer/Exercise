@@ -1,0 +1,59 @@
+<!-- form container -->
+<div class="container">
+
+    <div class="jumbotron">
+        <h1 class="text-muted">Image Selection:</h1>
+        <form class="form-horizontal" role="form" [formGroup]="myForm">
+            <h4 class="col-form-label">Thumbnail: <img class="image-thumbnail" src="{{image ? image.urls.thumb : ''}}">
+            </h4>
+            <div class="form-group row">
+                <label class="col-md-12 col-form-label">Image URL:</label>
+                <div class="col-md-12">
+                    <input formControlName="img" type="text" class="form-control" readonly>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-md-12 col-form-label">Name:</label>
+                <div class="col-md-12">
+                    <input formControlName="name" type="text" class="form-control" readonly>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-md-12 col-form-label">Description:</label>
+                <div class="col-md-12">
+                    <input formControlName="description" type="text" class="form-control" readonly>
+                </div>
+            </div>
+        </form>
+        <button (click)="search()" type="button" class="btn btn-info btn-lg" data-toggle="modal"
+            data-target="#myModal">Search
+            Images</button>
+        <button (click)="clear()" type="button" class="btn btn-danger btn-lg">Clear Selection</button>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Select An Image</h4>
+                </div>
+                <div class="modal-body">
+                    <ul class="images" *ngFor="let response of response">
+                        <li class='index-images'>
+                            <a data-dismiss="modal" (click)="makeSelection(response)">
+                                <img class="image-selection" src="{{response.urls.small}}" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

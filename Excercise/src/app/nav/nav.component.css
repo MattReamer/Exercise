@@ -1,0 +1,47 @@
+header{
+    background: #131c27;
+    color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+nav {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    min-height: 10vh;
+    align-items: center;
+    flex-wrap: wrap;
+
+  }
+
+  a.nav-link{color:white;}
+
+  nav li{
+    font-size:1.5rem;
+    color:white;
+  }
+  nav li:hover{
+      text-decoration: underline;
+      font-size: 1.6rem;
+  }
+  nav ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+  }
+  #logo {
+    flex: 2 1 40rem;
+    font-family: "Pattaya", sans-serif;
+    font-weight: 400;
+  }
+
+  @media(max-width: 932px){
+    nav{text-align: center;}
+    #logo{
+        padding: 1rem;
+    }
+}

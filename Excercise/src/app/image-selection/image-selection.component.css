@@ -1,0 +1,66 @@
+.images{
+    display: flex;
+    flex-direction: row;
+}
+
+.index-images{
+    display: flex;
+    border: 1px black
+}
+li{
+    justify-content: center;
+}
+.modal-body{
+    min-height: 45rem;
+    max-height: 60rem;
+    overflow-y: scroll;
+    align-self: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+img.image-selection{
+   cursor: pointer; 
+   padding-left: 1rem;
+   width: 100%;
+}
+img.image-selection:active{
+    transform: translateY(2px);
+}
+.jumbotron{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 1rem;
+    width: 70rem;
+    align-self: center;
+}
+h1{
+    align-self: center;
+
+    padding-bottom: 1.5rem;
+}
+h4{
+    
+    margin-bottom: 2rem;
+}
+img.image-thumbnail{
+    margin-left: 1rem;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    margin-top: 1rem;
+}
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px)  { 
+      img{ max-width: 95%;
+      }
+}
