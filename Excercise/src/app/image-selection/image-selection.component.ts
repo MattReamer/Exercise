@@ -45,7 +45,7 @@ export class ImageSelectionComponent implements OnInit {
 
     this.myForm.setValue(
       {
-        img: image.urls.thumb,
+        img: image.urls.full,
         name: image.id,
         description: image.description ? image.description : "No Description"
       })
