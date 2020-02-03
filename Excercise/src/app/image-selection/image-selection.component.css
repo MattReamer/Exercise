@@ -34,6 +34,7 @@ img.image-selection:active{
     margin-top: 1rem;
     width: 70rem;
     align-self: center;
+    padding-top: 2rem;
 }
 h1{
     align-self: center;
@@ -47,6 +48,9 @@ h4{
 }
 h4 p{
     margin-top: 1rem;
+}
+h4.col-form-label{
+    margin-bottom: .5rem;
 }
 img.image-thumbnail{
     margin-left: 1rem;
