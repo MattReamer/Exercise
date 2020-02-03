@@ -43,6 +43,10 @@ h1{
 h4{
     
     margin-bottom: 2rem;
+    
+}
+h4 p{
+    margin-top: 1rem;
 }
 img.image-thumbnail{
     margin-left: 1rem;
