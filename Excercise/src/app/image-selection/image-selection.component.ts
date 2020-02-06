@@ -24,6 +24,7 @@ export class ImageSelectionComponent implements OnInit {
 
   ngOnInit() {
     this.initializeForm();
+
   }
 
   initializeForm() {
