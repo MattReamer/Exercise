@@ -57,7 +57,13 @@
                             </a>
                         </li>
                     </ul>
-                    <h1 class="no-images" *ngIf="response.length == 0">No images Founds.</h1>
+                    <div *ngIf="response.length == 0">
+                        <h4 class="no-images" *ngIf="response.length == 0">Your search - {{inputText}} - did not yield
+                            any results
+                        </h4>
+                        <h5>Suggestion: Try different keywords</h5>
+                    </div>
+
                 </div>
                 <div class=" modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

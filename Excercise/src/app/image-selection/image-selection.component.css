@@ -37,15 +37,11 @@ img.image-selection:active{
     align-self: center;
     padding-top: 2rem;
 }
-h1{
-    align-self: center;
-
+h{
     padding-bottom: 1.5rem;
 }
 h4{
-    
     margin-bottom: 2rem;
-    
 }
 h4 p{
     margin-top: 1rem;
@@ -67,7 +63,7 @@ button{
     margin-top: 1rem;
 }
 .no-images{
-    margin-left: 10rem;
+    margin-left: 0rem;
     margin-right: 10rem;
 }
 
