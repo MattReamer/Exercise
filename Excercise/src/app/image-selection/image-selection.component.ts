@@ -18,6 +18,7 @@ export class ImageSelectionComponent implements OnInit {
   response: {};
   image: {};
   myForm: FormGroup;
+  inputText: string;
 
   constructor(private svc: ImagesService) {
   }
@@ -34,16 +35,17 @@ export class ImageSelectionComponent implements OnInit {
       img: new FormControl()
     })
   }
-  search() {
-    this.svc.search().subscribe((response) => {
-      this.response = response;
+  search(arg) {
+    this.svc.search(this.inputText).subscribe((response) => {
+      this.response = response.results;
+
     });
   }
 
   makeSelection(image) {
     this.image = image;
     console.log(image);
-
+    this.inputText = "";
     this.myForm.setValue(
       {
         img: image.urls.full,

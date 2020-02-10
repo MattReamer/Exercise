@@ -1,0 +1,27 @@
+.container{
+    border: 1px solid black ;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+   width: 50%;
+   align-self: center;
+   margin-bottom: 10px;
+}
+h1 {
+    margin-left: 1rem;
+    margin-bottom: 0;
+}
+h3{
+    margin-top: 0;
+    margin-left: 1rem;
+    font-style: italic;
+}
+.ad-info{
+    display: flex;
+   flex-direction: column;
+   
+   
+}
