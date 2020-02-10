@@ -31,8 +31,8 @@
         </form>
         <div class="form-group">
             <label for="searchCriteria">Search Criteria</label>
-            <input type="email" class="form-control" [(ngModel)]="inputText" id="searchCriteria"
-                aria-describedby="emailHelp" placeholder="Enter Search Criteria then press Search Images!">
+            <input type="text" class="form-control" [(ngModel)]="inputText" id="searchCriteria"
+                placeholder="Enter Search Criteria then press Search Images!">
         </div>
         <button (click)="search()" type="submit" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
             <span *ngIf="!image">Search Images</span>
