@@ -38,6 +38,7 @@ export class ImageSelectionComponent implements OnInit {
   search(arg) {
     this.svc.search(this.inputText).subscribe((response) => {
       this.response = response.results;
+      console.log(this.response)
 
     });
   }

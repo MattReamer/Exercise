@@ -66,6 +66,10 @@ img.image-thumbnail{
 button{
     margin-top: 1rem;
 }
+.no-images{
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
 
 /* Portrait and Landscape */
 @media only screen 

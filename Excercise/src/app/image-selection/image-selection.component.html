@@ -50,13 +50,14 @@
                     <h4 class="modal-title">Select An Image</h4>
                 </div>
                 <div class="modal-body">
-                    <ul class="images">
+                    <ul *ngIf="response.length !== 0" class="images">
                         <li class='index-images' *ngFor="let response of response">
                             <a data-dismiss="modal" (click)="makeSelection(response)">
                                 <img class="image-selection" src="{{response.urls.small}}" />
                             </a>
                         </li>
                     </ul>
+                    <h1 class="no-images" *ngIf="response.length == 0">No images Founds.</h1>
                 </div>
                 <div class=" modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
